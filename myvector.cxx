@@ -36,7 +36,7 @@ int MyVector<T>::capacity(){
 
 template <class T>
 bool MyVector<T>::empty(){
-  if (vSize = 0){
+  if (vSize == 0){
     return true;
   }
   else {
