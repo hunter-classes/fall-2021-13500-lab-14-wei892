@@ -4,19 +4,19 @@ template <class T>
 class MyVector{
  public:
   MyVector();
-  /*
-  size();
-  capacity();
-  empty();
-  push_back();
-  pop_back();
-  clear();
+  int size();
+  int capacity();
+  bool empty();
+  void push_back(T item);
+  void pop_back();
+  void clear();
   T operator[] (int i){
-    return data[i];
-  */
+    return arr[i];
+  }
  private:
-  int capacity;
-  int size;
+  int vCapacity;
+  int vSize;
+  T* arr;
 };
 
 #include "myvector.cxx"
